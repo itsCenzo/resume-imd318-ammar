@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.education-list {
+  list-style-type: decimal;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

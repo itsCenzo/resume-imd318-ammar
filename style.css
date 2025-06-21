@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hover-animate {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+}
+
+.hover-animate:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #495057;
+  border-radius: 4px;
+}
+
+#intro {
+  background: linear-gradient(to right, #6c757d, #adb5bd);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#intro h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+#intro p {
+  font-size: 1.2rem;
+}
+
+#intro button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: white;
+  color: #343a40;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+#intro button:hover {
+  background: #dee2e6;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-box {
+  background-color: #8f969d;
+  color: #ffffff;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.section-box img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #343a40;
+}
+
+.section-box form input,
+.section-box form textarea {
+  background-color: #495057;
+  color: #fff;
+  border: 1px solid #ced4da;
+}
+
+.section-box form input::placeholder,
+.section-box form textarea::placeholder {
+  color: #dee2e6;
+}
+
+.section-box form label {
+  color: #f8f9fa;
+}
+
+.section-box button {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.section-box button:hover {
+  background-color: #dee2e6;
+}
+
+.card {
+  background: #2c2f33;
+  color: #f8f9fa;
+  padding: 20px 24px;
+  border-left: 4px solid #ffc107;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #343a40;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #495057;
+}
+
+table {
+  margin-top: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  color: black;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+table thead {
+  background-color: #343a40;
+  color: white;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+#top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  background-color: #212529;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#top-button.show {
+  display: block;
+}
+
+.typed-text {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.cursor {
+  font-size: 2.0rem;
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  animation: blink 0.7s infinite;
+}
+/* Gallery section */
+#gallery {
+  padding: 40px 0;
+}
+
+.gallery-box {
+  background-color: #999da2;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-box h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.gallery-preview {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.gallery-preview img {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-preview img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-button {
+  margin-top: 20px;
+}
+
+.gallery-button button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-button button:hover {
+  background-color: #ddd;
+}
+footer {
+  background-color: #1a1a1a;
+  padding: 30px 0;
+  text-align: center;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.footer-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin: 0 12px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #1db954; /* Optional hover color (Spotify green or change as you want) */
+}
+
+
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-box {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #intro h2 {
+    font-size: 2rem;
+  }
+
+  #intro p {
+    font-size: 1rem;
+  }
+
+  form, .experience-card, .card {
+    padding: 20px;
+  }
+  
+}
